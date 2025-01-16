@@ -71,7 +71,17 @@ express-typescript-api/
    ```bash
    vercel
    ```
-
+### ENV
+```
+DB_DIALECT=postgres # or mysql
+DB_HOST=localhost
+DB_PORT=5432 # For PostgreSQL, use 3306 for MySQL
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+ClIENT=http://localhost:3000
+ORIGIN=http://localhost:3000
+```
 ### AWS Lambda
 1. Install the AWS Lambda adapter:
    ```bash
