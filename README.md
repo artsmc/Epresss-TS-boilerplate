@@ -91,6 +91,23 @@ express-typescript-api/
    ```
 3. Deploy using the AWS CLI or tools like Serverless Framework.
 
+## Additional Features
+
+### Request Validation
+- Integrated with `@hapi/joi` for robust request validation.
+- Example middleware in `src/middleware/test.post.validation.ts` validates incoming requests against a schema defined in `src/validation/test.validation.ts`.
+
+### Graceful Shutdown
+- Handles server termination signals (`SIGUSR2`, `SIGINT`) to ensure resources are released properly.
+
+### Logging
+- Logs each incoming request with method, path, and processing time for better observability during development.
+
+### CORS Configuration
+- Supports custom CORS settings, allowing for flexible integration with client applications.
+
+---
+
 ## License
 This project is licensed under the MIT License. Feel free to use it as you see fit.
 
